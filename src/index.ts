@@ -96,3 +96,23 @@ function greeping(name: string, greet?: string) {
 }
 greeping("Jose")
 greeping("Jose", "Sir")
+
+
+
+/**--------------------------------------------------------**/
+//interfaces em funcoes ou variaveis
+interface paramsArgs{
+  num2: number;
+  num1: number;
+}
+function somar(valor: paramsArgs){
+   return valor.num1 + valor.num2
+}
+console.log(somar({num1: 2, num2: 2}))
+//
+const someNumbers: paramsArgs = {
+  num1: 5,
+  num2: 5
+} 
+
+console.log(somar(someNumbers))
